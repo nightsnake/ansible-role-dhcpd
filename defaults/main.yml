@@ -16,9 +16,9 @@ dhcpd_domain_name_servers:
 dhcpd_domain_search: example.com
 
 # The image to serve for PXE booting.
-dhcpd_filename: "pxelinux.0"
+#dhcpd_filename: "pxelinux.0"
 # Where the image can be downloaded from.
-dhcpd_next_server: "10.0.2.254"
+#dhcpd_next_server: "10.0.2.254"
 
 # DHCP works with subnets, a list containing properties per subnet.
 dhcpd_subnets:

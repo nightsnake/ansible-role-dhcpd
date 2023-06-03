@@ -5,3 +5,5 @@
   ansible.builtin.service:
     name: "{{ dhcpd_service }}"
     state: restarted
+  when:
+    - not ansible_check_mode
