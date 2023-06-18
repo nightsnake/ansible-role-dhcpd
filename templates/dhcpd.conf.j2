@@ -3,6 +3,7 @@ default-lease-time {{ dhcpd_default_lease_time }};
 max-lease-time {{ dhcpd_max_lease_time }};
 option domain-name-servers {{ dhcpd_domain_name_servers | join(', ') }};
 option domain-search "{{ dhcpd_domain_search }}";
+option domain-name "{{ dhcpd_domain }}";
 
 {% for subnet in dhcpd_subnets %}
 subnet {{ subnet.network }} netmask {{ subnet.netmask }} {
